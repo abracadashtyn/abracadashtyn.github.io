@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+:root {
+  --neutral: #f8dcd8;
+  --pink: #f89ab4;
+  --light-orange: #f89327;
+  --dark-orange: #fa7623;
+  --peach: #fd957c;
+  --yellow: #ebba35;
+  --dark-pink: #580018;
+}
+
+/* styling for small screens */
+@media only screen and (max-width: 800px) {
+    .flex {
+        flex-wrap:wrap;
+    }
+    .name {
+      color: var(--yellow);
+    }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 100%;
+  margin:0;
+  padding:0;
+  color: var(--dark-pink);
+  background-color: var(--neutral);
+  font-family: 'Tahoma', sans-serif;
+}
+
+.main_container {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  height:100%;
+}
+
+.content {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  padding-left: 60px;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--dark-pink);
+  padding-bottom: 2em;
+}
+
+.name {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 11rem;
+  color: var(--pink);
+}
+
+.aboutMe {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--dark-pink);
+}
+
+.links {
+    padding-left: 20px;
+}
+
+.horizontalFlex {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.linkBarStyling {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-weight:bold;
+  font-size: 2em;
+}
+
+.linkbox a{
+  color: var(--dark-orange);
+  font-family: 'Abril Fatface', cursive;
+}
+
+.linkSeparator {
+  color: var(--pink);
+  font-family: 'Abril Fatface', cursive;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.backgroundSpan {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: var(--neutral);
+  border-radius: 40px;
+  padding-left: 40px;
+}
